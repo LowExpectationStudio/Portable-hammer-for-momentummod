@@ -1,0 +1,42 @@
+"GameInfo"
+{
+    game    "Garry's Mod"
+    title   ""
+    title2  ""
+    type    multiplayer_only
+
+    "developer"         "Facepunch Studios"
+    "developer_url"     "http://www.garrysmod.com/"
+    "manual"            "http://wiki.garrysmod.com/"
+
+    "GameData"      "garrysmod.fgd"
+    "InstancePath"  "maps/instances/"
+
+    FileSystem
+    {
+        SteamAppId              4000
+        ToolsAppId              211
+
+        SearchPaths
+        {
+            game+mod            "C:\Path\To\GarrysMod\garrysmod\addons\*"
+            game+mod            "C:\Path\To\GarrysMod\garrysmod\garrysmod.vpk"
+
+            game                "C:\Path\To\GarrysMod\sourceengine\hl2_textures.vpk"
+            game                "C:\Path\To\GarrysMod\sourceengine\hl2_sound_vo_english.vpk"
+            game                "C:\Path\To\GarrysMod\sourceengine\hl2_sound_misc.vpk"
+            game                "C:\Path\To\GarrysMod\sourceengine\hl2_misc.vpk"
+
+            platform            "C:\Path\To\GarrysMod\platform\platform_misc.vpk"
+
+            mod+mod_write+default_write_path        |gameinfo_path|.
+            game+game_write     |gameinfo_path|.
+
+            gamebin             "C:\Path\To\GarrysMod\bin"
+
+            game                "C:\Path\To\GarrysMod\sourceengine"
+            platform            "C:\Path\To\GarrysMod\platform"
+            game+download       |gameinfo_path|download
+        }
+    }
+}
