@@ -16,7 +16,8 @@ Public packaging scripts for a separate portable Hammer++ setup that uses the Ga
 Those files are intentionally excluded. The checked-in templates use placeholder paths on purpose, and the setup script rewrites them locally for each user on first run.
 
 ## How to use
-1. Download the Garry's Mod Hammer++ build separately.
+1. Download the Garry's Mod Hammer++ build from:
+   https://ficool2.github.io/HammerPlusPlus-Website/download.html
 2. Copy its `bin` folder into this package folder.
 3. Run `momentum mount - do this first.bat` or `Launch Hammer++ with momentum mounted.bat`.
 4. Let the script detect Garry's Mod and Momentum Mod, or enter the paths manually.

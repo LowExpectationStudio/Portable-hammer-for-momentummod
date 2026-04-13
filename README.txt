@@ -12,11 +12,14 @@ Repository note
 - This repository is public so people can inspect the setup scripts and packaging logic.
 - The upstream Hammer++ binaries are third-party files and are not claimed as open source by this repository.
 - The public repository intentionally excludes the bundled "bin" folder.
-- To use this package from the repository, copy in the Hammer++ Garry's Mod build's "bin" folder yourself before first run.
+- To use this package from the repository, download the Hammer++ Garry's Mod build from:
+  https://ficool2.github.io/HammerPlusPlus-Website/download.html
+- Then copy that build's "bin" folder into this package folder before first run.
+- The checked-in "mount.cfg" and "gameinfo.txt" use placeholder paths on purpose; the setup script rewrites them for each user locally.
 
 First run
 1. Extract this folder anywhere.
-2. Double-click "Launch Hammer++ with momentum mounted.bat".
+2. Double-click "Launch Hammer++ for Momentum Mod.bat".
 3. The setup script will try to detect your Momentum Mod install automatically.
 4. If it cannot find it, paste the full path to your Momentum Mod "momentum" folder.
 5. The script also detects your Garry's Mod 64-bit install.
@@ -26,7 +29,7 @@ First run
 9. Hammer++ launches with explicit "-game" and "-vproject" arguments pointing to this portable folder's own "garrysmod" directory.
 
 Manual configure only
-- If you only want to write or update the mount path without launching Hammer++, run "momentum mount - do this first.bat".
+- If you only want to write or update the mount path without launching Hammer++, run "Configure Momentum Mount.bat".
 
 Expected Momentum path
 - Typical Steam install:
@@ -50,7 +53,7 @@ Important notes
   docs\\UPSTREAM-HammerPP-README.txt
 
 Files you will likely use
-- Launch Hammer++ with momentum mounted.bat
-- momentum mount - do this first.bat
+- Launch Hammer++ for Momentum Mod.bat
+- Configure Momentum Mount.bat
 - garrysmod\\cfg\\mount.cfg
 - tools\\Setup-MomentumMount.ps1
